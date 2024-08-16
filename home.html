@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Biomat USA</title>
+	<meta charset="utf-8">
+	<style>
+
+		body {
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+		h1{
+			text-align: center;
+			color: white;
+		}
+		.top-section {
+			background-color: #8c0404; /* Set top color to white */
+			padding: 20px 0;
+			text-align: left;
+			color: white;
+		
+		}
+
+		#box {
+		    background-color: white;
+		    padding: 20px;
+		    border: 10px solid #FAFAFA;
+		    margin: auto; /* Set margin to auto to horizontally center the box */
+		    margin-top: 50px;
+		    width: 400px;
+		    height: 350px;
+		    text-align: center; /* Center text inside the box */
+		}
+
+        form {
+            margin-top: 20px;
+        }
+        footer {
+            color: white;
+            background-color: #8c0404;
+            padding: 0px ;
+            width: 100%;
+            position: absolute; /* Set footer position to absolute */
+            bottom: 0; /* Stick footer to the bottom of the viewport */
+            text-align: center;
+        }
+        #reset{
+        	color: red;
+        }
+        .submit-btn {
+            background-color: #DD0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: darkred;
+        }
+        .logo {
+            max-width: 150px;
+            height: auto;
+            /*background-color: gray;*/
+        }
+	</style>
+</head>
+<body>
+	<div class="top-section">
+		<img src="biomat_logo.png" alt="Biomat Logo" class="logo">
+	<h1>BioMat</h1>
+</div>
+
+	<div id="box">
+
+	<h2>Welcome to BioMat</h2>
+
+	<P> Enter your login credentials </P>
+
+	<form action='movie-list.html' method ='post'>
+		User Name:<br>
+		<input type="text" name="Username" required><br>
+		Password:<br>
+		<input type="password" name="Password" required><br>
+		<br> 
+		<input type="checkbox" checked= "checked" name="rememberMe"> Remember me
+		<br> <br>
+		<div class="color">
+		<input type="submit" value="Sign In" class="submit-btn">
+		</div>
+		<br>
+		<br>
+		Forgot Your password?<br>
+		<br>
+		<div id="reset">
+			Reset Your password
+		</div>
+
+
+
+	</form>
+	<p></p>
+	</div>
+
+	<footer>
+		<div>
+		<p>For technical issues you can contact us at: cinemark@gmail.com</p>
+		</div>
+	</footer>
+
+</body>
+</html>

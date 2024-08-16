@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.top-section {
+    background-color: white; /* Set top color to white */
+    padding: 20px 0;
+    text-align: left;
+    color: #30669A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #30669A; /* blue background color */
+    padding: 20px 0; /* Padding around the header */
+}
+
+.separator {
+    border: none;
+    height: 2px;
+    background-color: white; /* White separation line */
+    margin: 10px 0; /* Increased margin for 150% gap */
+}
+
+.logo {
+    width: 100px; /* Adjust the logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    margin-left: 20px;
+    color: #30669A; /* Set the color of Biomat name to new blue */
+}
+
+.login-button {
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #30669A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #ddd;
+    color: #30669A;
+}
+
+nav span {
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+}
+
+nav span:hover {
+    color: red; /* Change color on hover */
+}
+
+.main-heading {
+    background-color: white; /* White background */
+    color: #006400; /* Neon green color */
+    padding: 20px 0;
+    margin: 0 auto; /* Center the heading */
+    width: 50%; /* Restrict width */
+    overflow: hidden; /* Hide overflow for animation */
+    white-space: nowrap; /* Prevent wrapping */
+    position: relative; /* Required for absolute positioning */
+}
+
+.main-heading h2 {
+    position: relative;
+    left: 100%; /* Start offscreen */
+    animation: scrollText 15s linear infinite; /* Adjust timing as needed */
+    display: inline-block; /* Ensure it doesn't wrap */
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* Start offscreen */
+    }
+    100% {
+        transform: translateX(-100%); /* End offscreen */
+    }
+}
+
+.main-image {
+    position: relative;
+    overflow: hidden; /* Ensure image does not affect text wrapping */
+}
+
+.main-image img {
+    width: 90%; /* Ensure image spans full width */
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+    text-align: left;
+    flex-grow: 1; /* Ensures content takes available space */
+}
+
+footer {
+    background-color: #30669A;
+    color: white;
+    padding: 10px 0; /* Reduced padding for less height */
+    text-align: left;
+    margin-top: auto; /* Ensures footer is at the bottom */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px; /* Adjusted padding */
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    color: #ffcc00; /* Best matching color for links */
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #ffa500; /* Change color on hover to orange */
+    text-decoration: underline;
+}
